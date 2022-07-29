@@ -14,68 +14,178 @@ code {
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Roboto Slab', serif; */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 html {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Barlow', sans-serif;
+	/* font-family: "Montserrat", sans-serif; */
+	font-family: "Barlow", sans-serif;
 }
 body {
-  background: #eee;
+	background: #eee;
+	min-height: 100%;
 }
 
-header {
-  background-color: #f5ba13;
-  /* margin: auto auto; */
-  padding: 20px 32px;
-  text-align: left;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+.header {
+	background-color: #f5ba13 !important;
+	/* margin: auto auto; */
+	padding: 20px 32px;
+	text-align: left;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-  color: #000;
-  /* font-family: "McLaren", cursive; */
-  font-family: 'Roboto Slab', serif;
-  font-weight: 800;
-  font-size: 2.5rem;
+.headerh1 {
+	color: #000;
+	/* font-family: "McLaren", cursive; */
+	font-family: "Roboto Slab", serif;
+	font-weight: 800;
+	font-size: 2.5rem;
 }
 
+/* .footerdiv{
+  margin-top: 20rem;
+} */
 footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+	/* position: absolute;
+	text-align: center;
+      bottom:0;
+	width: 100vw;
+	height: 7rem; */
+	clear: both;
+	position: relative;
+	height: 7rem;
+	margin-top: 520px;
+	background-color: #f5ba13;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 footer p {
-  color: rgb(22, 20, 20);
-  font-weight: 400;
+	color: rgb(22, 20, 20);
+	font-weight: 400;
+	font-family: "Roboto Slab", serif;
+	font-weight: bold;
+}
+.footer-i {
+	font-size: 1.5rem;
+	padding: 2rem 1.5rem 0 0;
+	margin-bottom: 1.5rem;
+	color: white;
+}
+.footer-i:hover {
+	color: #000;
 }
 .note {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px 25px 10px 25px;
-  text-align: center;
-  width: 300px;
-  margin: 4rem 0 0 4rem;
-  float: left;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px #ccc;
+	padding: 10px 25px 10px 25px;
+	text-align: center;
+	width: 300px;
+	margin: 4rem 0 3rem 3rem;
+	float: left;
+	font-family: "Roboto Slab", serif;
 }
 .note h1 {
-  font-size: 1.1em;
-  margin: 5px 0 25px 0;
+	font-size: 1.1em;
+	margin: 5px 0 25px 0;
+	font-weight: bold;
 }
 .note p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+	font-size: 1.1em;
+	margin-bottom: 30px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
-.icons{
-       margin: 0 2.5rem 0 1.5rem;
+.icons {
+	margin: 0 2.5rem 0 1.5rem;
 }
 
+.note button {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	color: #f5ba13;
+	border: none;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	outline: none;
+}
+
+form {
+	position: relative;
+	width: 520px;
+	margin: 30px auto 20px auto;
+	background: #fff;
+	padding: 15px;
+	border-radius: 7px;
+	box-shadow: 0 1px 5px rgb(138, 137, 137);
+	font-family: "Roboto Slab", serif;
+}
+form input,
+form textarea {
+	width: 100%;
+	border: none;
+	padding: 4px;
+	outline: none;
+	font-size: 1.2em;
+	font-family: inherit;
+	resize: none;
+	margin-bottom: 1.2rem;
+}
+form button {
+	font-family: "Roboto Slab", serif;
+	position: absolute;
+	right: 18px;
+	bottom: -18px;
+	background: #f5ba13;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	outline: none;
+}
+form button:hover {
+	background-color: #000;
+}
+.DateStyle {
+	font-size: 1.5rem;
+	margin-right: 4rem;
+	text-align: right;
+	width: 100%;
+	/* position: absolute;
+	top:2rem;
+	left:100rem; */
+}
+.clockicon {
+	margin-right: 1rem;
+}
+/* Media Query */
+@media screen and (min-width: 100px) and (max-width: 380px) {
+	form {
+		width: 300px;
+	}
+	.headerh1 {
+		font-size: 1.5rem;
+		margin-left: -3rem;
+	}
+	.icons {
+		margin-right: 1rem;
+	}
+	.DateStyle {
+		display: none;
+	}
+}
+@media screen and (min-width: 381px) and (max-width: 420px) {
+}
+@media screen and (min-width: 421px) and (max-width: 768px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+}
