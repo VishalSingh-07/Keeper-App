@@ -5,7 +5,7 @@ function Navbar() {
 	return (
 		// eslint-disable-next-line react/style-prop-object
 		<nav class="navbar navbar-expand-lg navbar-light bg-light header">
-			<div class="container-fluid">
+			<div class="container-fluid headericons">
 				<a class="navbar-brand headerh1">
 					<i className="fas fa-lightbulb icons"></i>Keeper App
 				</a>
