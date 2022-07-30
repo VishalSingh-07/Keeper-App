@@ -14,8 +14,3 @@ function Note(props) {
 }
 
 export default Note
-
-// "@mui/material": "^5.9.2",
-// 		"@mui/styled-engine-sc": "^5.8.0",
-// "@emotion/react": "^11.9.3",
-// 		"@emotion/styled": "^11.9.3",
